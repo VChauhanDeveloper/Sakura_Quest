@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sakura Quest 2025 | Japanese Culture & Education Fair India – Education Japan</title>
+  <meta name="description"
+    content="Sakura Quest 2025 by Education Japan – India's biggest Japanese culture & education fair. Explore study in Japan, cultural shows, scholarships, and meet top experts.">
+  <meta name="keywords"
+    content="Sakura Quest, sakura quest, Sakura Quest 2025, Education Japan, Sakura Quest Fair India, Japanese education fair India, study in Japan, Japan cultural event, Japanese festival India, Sakura Quest exhibition, sakura quest japan education, sakura quest education japan, sakura quest festival">
+  <meta name="author" content="Sakura Quest Education Japan">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://sakuraquest.netlify.app/Images/sakuraquest-logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://sakuraquest.netlify.app/Images/sakuraquest-logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://sakuraquest.netlify.app/Images/sakuraquest-logo.png">
+
+
+
+  <!-- Complete Register Button Click Tracker - Head section mein paste karein -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Click counter initialize
+      let registerClicks = parseInt(localStorage.getItem('registerClicks') || '0');
+
+      // Function to track clicks
+      function trackRegisterClick() {
+        registerClicks++;
+        localStorage.setItem('registerClicks', registerClicks);
+
+        // Console mein dikhane ke liye
+        console.log('🌸 Register Now clicked:', registerClicks, 'times');
+
+        console.log('1. gtag available:', typeof gtag);
+        // Google Analytics 4 (GA4) tracking - Single clean event
+        gtag('event', 'register_button_click', {
+          'event_category': 'engagement',
+          'event_label': 'register_now_button',
+          'value': registerClicks,
+          'campaign_name': 'sakura_quest_2025'
+        });
+
+        // Facebook Pixel tracking (if you have FB pixel)
+        if (typeof fbq !== 'undefined') {
+          fbq('track', 'Lead', {
+            content_name: 'Register Now Button',
+            value: registerClicks
+          });
+        }
+
+        // Optional: Server ko data bhejne ke liye
+        /*
+        fetch('/track-click', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                button: 'register_now',
+                count: registerClicks,
+                timestamp: new Date().toISOString()
+            })
+        });
+        */
+      }
+
+      // Updated selectors for your specific buttons
+      const possibleSelectors = [
+        '.register',                    // ✅ Your main class
+        'button[onclick*="register"]',
+        'a[href*="register"]',
+        '.register-btn',
+        '.register-button',
+        '#register-btn',
+        '#registerBtn',
+        '[class*="register"]',          // Backup for any register class
+        '[id*="register"]'
+      ];
+
+      // Attach event listeners with duplicate prevention
+      possibleSelectors.forEach(selector => {
+        try {
+          const elements = document.querySelectorAll(selector);
+          elements.forEach(element => {
+            // Prevent duplicate listeners
+            if (!element.hasAttribute('data-tracked')) {
+              element.addEventListener('click', trackRegisterClick);
+              element.setAttribute('data-tracked', 'true');
+              console.log('✅ Tracker attached to:', element.tagName, element.className);
+            }
+          });
+        } catch (e) {
+          // Ignore errors for invalid selectors
+        }
+      });
+
+      // Text content ke basis par bhi detect karenge (backup method)
+      const allButtons = document.querySelectorAll('button, a, div[onclick], span[onclick]');
+      allButtons.forEach(button => {
+        const text = button.textContent.toLowerCase();
+        if ((text.includes('register') || text.includes('रजिस्टर')) &&
+          !button.hasAttribute('data-tracked')) {
+          button.addEventListener('click', trackRegisterClick);
+          button.setAttribute('data-tracked', 'true');
+          console.log('✅ Text-based tracker attached to:', button.textContent.trim());
+        }
+      });
+
+      // Console mein current count show karenge
+      console.log('🌸 Current Register clicks:', registerClicks);
+      console.log('📊 Found register buttons:', document.querySelectorAll('[data-tracked="true"]').length);
+
+      // Admin panel - Console mein commands
+      window.getRegisterClicks = function () {
+        return parseInt(localStorage.getItem('registerClicks') || '0');
+      };
+
+      window.resetRegisterClicks = function () {
+        localStorage.removeItem('registerClicks');
+        registerClicks = 0;
+        console.log('Register clicks reset to 0');
+        return 0;
+      };
+
+      window.setRegisterClicks = function (count) {
+        localStorage.setItem('registerClicks', count);
+        registerClicks = count;
+        console.log('Register clicks set to:', count);
+        return count;
+      };
+
+      // Debug function to see which buttons were found
+      window.showTrackedButtons = function () {
+        const tracked = document.querySelectorAll('[data-tracked="true"]');
+        console.log('Tracked buttons:', tracked);
+        tracked.forEach((btn, i) => {
+          console.log(`Button ${i + 1}:`, btn.textContent.trim(), btn);
+        });
+        return tracked;
+      };
+    });
+  </script>
+
+  <!-- Google tag traffic (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SHQ86BHD1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-2SHQ86BHD1', { 'debug_mode': true });
+  </script>
+
+
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Sakura Quest 2025 | Japan Culture & Education Fair in India">
+  <meta property="og:description"
+    content="Join Sakura Quest 2025 – Explore study in Japan, cultural programs, and exclusive opportunities for students & Japan enthusiasts.">
+  <meta property="og:url" content="https://sakuraquest.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://d502jbuhuh9wk.cloudfront.net/orgData/66800fde5545aa2278bc7f2e/pages/assets/images/8wmrVimg4350.png">
+  <!-- Suggestion: use a wide banner instead of logo for better social sharing -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sakura Quest 2025 | Japanese Education & Culture Fair">
+  <meta name="twitter:description"
+    content="Discover Sakura Quest 2025 – India's premier event for Japanese education & culture. Study abroad, cultural exchange, and networking all in one place.">
+  <meta name="twitter:image"
+    content="https://d502jbuhuh9wk.cloudfront.net/orgData/66800fde5545aa2278bc7f2e/pages/assets/images/8wmrVimg4350.png">
+  <!-- same banner for Twitter -->
+
+  <!-- Mobile Friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FF69B4"> <!-- Sakura pink shade -->
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#fff1f5',
+              100: '#ffe4e9',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2c2e6f2c8.js" crossorigin="anonymous"></script>
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Swiper (Gallery/Logos) -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
+  <script defer src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+
+
+
+  <style>
+    :root {
+      --ring: 0 0 0 3px rgba(244, 63, 94, 0.35);
+    }
+
+    body {
+      overflow-x: hidden;
+      font-family: 'Inter', 'Noto Sans JP', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+    }
+
+
+    /* Hero background */
+    .hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1558980664-10ea8d7a6c83?q=80&w=1887&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .glass {
+      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.75);
+    }
+  </style>
+</head>
+
+
+<body class="text-gray-800 scroll-smooth">
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Left Logos -->
+        <div class="flex items-center gap-2">
+
+          <!-- Education Japan Logo -->
+          <a href="https://www.educationjapan.co.in/" target="_blank" rel="noopener">
+            <img src="https://d502jbuhuh9wk.cloudfront.net/logos/66800fde5545aa2278bc7f2e.png?v=15" class="h-12 w-auto"
+              alt="Education Japan" />
+          </a>
+
+          <!-- Sakura Quest Logo -->
+          <a href=".">
+            <img src="./Images/sakuraquest-logo.png" style="width: 70px;height: 65px;" class="h-12 w-auto"
+              alt="Sakura Quest" />
+          </a>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="#overview" class="hover:text-primary-600">Overview</a>
+          <a href="#register" class="hover:text-primary-600">Register</a>
+          <a href="#services" class="hover:text-primary-600">Services</a>
+          <!-- <a href="#Participating_universities" class="hover:text-primary-600">Participating Universities</a>
+        <a href="#Participating_schools" class="hover:text-primary-600">Participating Schools</a> -->
+          <a href="#sponsors" class="hover:text-primary-600">Sponsors</a>
+          <a href="#location" class="hover:text-primary-600">Location</a>
+          <a href="#gallery" class="hover:text-primary-600">Cultural Shows</a>
+        </nav>
+
+        <!-- Register Button -->
+        <a href="https://forms.zohopublic.in/educationjapan98391/form/SakuraQuestDelhi/formperma/GhItMJL-BE2XdG8mnyai9Gq46zIU1g0vy3VhMoYNVEo"
+          target="_blank"
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-primary-600 text-white font-semibold shadow hover:bg-primary-700 focus:outline-none focus:ring-[var(--ring)]">
+          <span class="register">Register Now</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+
+
+        
+<!-- ===== Hero (with decorative countdown) ===== -->
+
+  <section class="relative hero-bg"
+    style="background-image: url('./Images/Hero Background.png'); background-size: cover;">
+    
+    <!-- Celebration Decoration Section - Copy this to your page -->
+<style>
+    @keyframes sakuraFall {
+        0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    }
+    
+    @keyframes celebration {
+        0%, 100% { transform: scale(1) rotate(0deg); }
+        25% { transform: scale(1.1) rotate(-5deg); }
+        75% { transform: scale(1.1) rotate(5deg); }
+    }
+    
+    @keyframes sparkle {
+        0%, 100% { opacity: 0; transform: scale(0); }
+        50% { opacity: 1; transform: scale(1); }
+    }
+    
+    @keyframes confetti {
+        0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+    }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    .celebration-section {
+        position: relative;
+        overflow: hidden;
+        padding: 40px 20px;
+        border-radius: 20px;
+    }
+    
+    /* Responsive font sizes */
+    @media (max-width: 768px) {
+        .celebration-section {
+            padding: 20px 15px;
+            border-radius: 15px;
+        }
+        
+        .celebration-title {
+            font-size: 1.5rem !important;
+        }
+        
+        .celebration-subtitle {
+            font-size: 1rem !important;
+        }
+        
+        .celebration-text {
+            font-size: 0.9rem !important;
+        }
+        
+        .celebration-emoji {
+            font-size: 1.2rem !important;
+        }
+        
+        .floating-emoji {
+            font-size: 1rem !important;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .celebration-section {
+            padding: 15px 10px;
+            margin: 15px 0;
+        }
+        
+        .celebration-title {
+            font-size: 1.2rem !important;
+        }
+        
+        .celebration-subtitle {
+            font-size: 0.9rem !important;
+        }
+        
+        .celebration-text {
+            font-size: 0.8rem !important;
+        }
+        
+        .celebration-emoji {
+            font-size: 1rem !important;
+        }
+        
+        .floating-emoji {
+            font-size: 0.9rem !important;
+        }
+    }
+    
+    .sakura-petal {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+        border-radius: 50% 0 50% 0;
+        animation: sakuraFall 4s linear infinite;
+        pointer-events: none;
+    }
+    
+    .celebration-emoji {
+        animation: celebration 2s ease-in-out infinite;
+        display: inline-block;
+    }
+    
+    .sparkle {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: #ffd700;
+        border-radius: 50%;
+        animation: sparkle 1.5s ease-in-out infinite;
+        pointer-events: none;
+    }
+    
+    .confetti-piece {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        animation: confetti 3s linear infinite;
+        pointer-events: none;
+    }
+    
+    .floating-emoji {
+        animation: float 3s ease-in-out infinite;
+        display: inline-block;
+    }
+</style>
+
+<section class="celebration-section">
+    <!-- Decorative Elements -->
+    <div class="sakura-petal" style="top: 10%; left: 5%; animation-delay: 0s;"></div>
+    <div class="sakura-petal" style="top: 20%; right: 5%; animation-delay: 1s;"></div>
+    <div class="sakura-petal" style="top: 40%; left: 10%; animation-delay: 2s;"></div>
+    <div class="sakura-petal" style="top: 60%; right: 8%; animation-delay: 3s;"></div>
+    <div class="sakura-petal" style="top: 80%; left: 15%; animation-delay: 1.5s;"></div>
+    
+    <div class="sparkle" style="top: 15%; left: 20%; animation-delay: 0.5s;"></div>
+    <div class="sparkle" style="top: 35%; right: 15%; animation-delay: 1.2s;"></div>
+    <div class="sparkle" style="top: 55%; left: 25%; animation-delay: 2.1s;"></div>
+    <div class="sparkle" style="top: 75%; right: 20%; animation-delay: 0.8s;"></div>
+    
+    <div class="confetti-piece" style="top: 5%; left: 30%; animation-delay: 0.3s; background: #ff69b4;"></div>
+    <div class="confetti-piece" style="top: 25%; right: 25%; animation-delay: 1.1s; background: #9d4edd;"></div>
+    <div class="confetti-piece" style="top: 45%; left: 35%; animation-delay: 1.8s; background: #ffd60a;"></div>
+    <div class="confetti-piece" style="top: 65%; right: 30%; animation-delay: 0.7s; background: #06ffa5;"></div>
+    
+   <!-- Content -->
+        <div style="position: relative; z-index: 10; text-align: center; width: fit-content;">
+            <h2 style="font-size: 1.3rem; font-weight: bold; color: #6b21a8; margin-bottom: 1rem; line-height: 1.4;">
+                <span class="celebration-emoji">🎉</span>
+                <button class="rounded-2xl bg-primary-600 text-white font-semibold shadow-lg hover:bg-primary-700 focus:outline-none focus:ring-[var(--ring)] px-4 py-2 transition-all duration-300 hover:scale-105 hover:shadow-xl" >
+                 <a href="https://forms.zohopublic.in/educationjapan98391/form/SakuraQuestDelhi/formperma/GhItMJL-BE2XdG8mnyai9Gq46zIU1g0vy3VhMoYNVEo" target="_blank">   Free Registration </a>
+                </button> 
+                <span class="celebration-emoji">🎉</span>
+            </h2>
+       
+        </div>
+    </div>
+    
+    <!-- Mobile Responsive Styles for Popup -->
+    <style>
+        @media (max-width: 480px) {
+            #celebrationPopup {
+                top: 70px !important;
+                left: 10px !important;
+                right: 10px !important;
+                max-width: none !important;
+                padding: 15px !important;
+            }
+            
+            #celebrationPopup h2 {
+                font-size: 1.1rem !important;
+            }
+            
+            #celebrationPopup p {
+                font-size: 0.8rem !important;
+            }
+            
+            #celebrationPopup button {
+                padding: 6px 12px !important;
+                font-size: 0.9rem !important;
+            }
+        }
+    </style>
+
+</section>
+
+
+<script>
+    // Dynamic sakura petals for celebration section
+    function createCelebrationPetal() {
+        const section = document.querySelector('.celebration-section');
+        if (!section) return;
+        
+        const petal = document.createElement('div');
+        petal.className = 'sakura-petal';
+        petal.style.left = Math.random() * 100 + '%';
+        petal.style.animationDelay = Math.random() * 2 + 's';
+        petal.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        
+        section.appendChild(petal);
+        
+        setTimeout(() => {
+            petal.remove();
+        }, 5000);
+    }
+    
+    // Create petals every 1.5 seconds
+    setInterval(createCelebrationPetal, 1500);
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97de2eeab00791b2',t:'MTc1NzY2NzI5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+
+    <div class="absolute inset-0"></div>
+    <div class="max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="">
+        <div class="glass p-6 sm:p-10 rounded-3xl shadow-xl max-w-3xl " data-aos="fade-up">
+          <p class="uppercase tracking-widest text-xs font-bold text-primary-700">Education Japan</p>
+
+          <h1 class="mt-3 text-4xl sm:text-6xl font-black leading-tight">
+            Sakura Quest <span class="text-primary-600">2025 Grand Finale</span>
+          </h1>
+
+          <p class="mt-4 text-lg sm:text-xl text-gray-700">India’s Biggest Study in Japan Event
+ – Once in a Lifetime opportunity, Limited Seats!</p>
+
+          <!-- date + decorative countdown + location -->
+          <div class="mt-6 flex flex-wrap items-center gap-3 text-sm">
+            <!-- Date pill -->
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white shadow">
+              <i class="fa-solid fa-calendar-day text-primary-600"></i>
+              <strong>21 Sept 2025</strong>
+            </span>
+
+            <!-- Decorative countdown -->
+            <div id="countdown"
+              class="flex items-center gap-3 px-3 py-1.5 rounded-full bg-gradient-to-r from-white/90 to-white/70 shadow-md ring-1 ring-gray-100"
+              role="region" aria-label="Countdown to Sakura Quest 2025">
+              <!-- small label -->
+              <div class="hidden sm:block text-xs uppercase font-medium text-gray-500 pr-2">Starts in</div>
+
+              <!-- digits container -->
+              <div class="flex items-center gap-2">
+                <!-- Days -->
+                <div class="text-center">
+                  <div class="inline-flex items-baseline gap-1">
+                    <div class="count-digit text-lg sm:text-2xl font-extrabold tracking-tight tabular-nums"
+                      id="cd-days">0</div>
+                  </div>
+                  <div class="text-[10px] sm:text-xs text-gray-500">days</div>
+                </div>
+
+                <!-- separator -->
+                <div class="hidden sm:block text-gray-300">:</div>
+
+                <!-- Hours -->
+                <div class="text-center">
+                  <div class="inline-flex items-baseline gap-1">
+                    <div class="count-digit text-lg sm:text-2xl font-extrabold tracking-tight tabular-nums"
+                      id="cd-hours">00</div>
+                  </div>
+                  <div class="text-[10px] sm:text-xs text-gray-500">hrs</div>
+                </div>
+
+                <div class="hidden sm:block text-gray-300">:</div>
+
+                <!-- Minutes -->
+                <div class="text-center">
+                  <div class="inline-flex items-baseline gap-1">
+                    <div class="count-digit text-lg sm:text-2xl font-extrabold tracking-tight tabular-nums"
+                      id="cd-mins">00</div>
+                  </div>
+                  <div class="text-[10px] sm:text-xs text-gray-500">mins</div>
+                </div>
+
+                <div class="hidden sm:block text-gray-300">:</div>
+
+                <!-- Seconds -->
+                <div class="text-center">
+                  <div class="inline-flex items-baseline gap-1">
+                    <div
+                      class="count-digit text-lg sm:text-2xl font-extrabold tracking-tight tabular-nums animate-pulse"
+                      id="cd-secs">00</div>
+                  </div>
+                  <div class="text-[10px] sm:text-xs text-gray-500">secs</div>
+                </div>
+              </div>
+
+              <!-- hidden live region for screen readers -->
+              <span id="cd-live" class="sr-only" aria-live="polite"></span>
+            </div>
+
+            <!-- Location pill -->
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white shadow">
+              <i class="fa-solid fa-location-dot text-primary-600"></i>
+              Pride Plaza Hotel, Aerocity, New Delhi
+            </span>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="https://forms.zohopublic.in/educationjapan98391/form/SakuraQuestDelhi/formperma/GhItMJL-BE2XdG8mnyai9Gq46zIU1g0vy3VhMoYNVEo"
+              target="_blank"
+              class="px-6 py-3 rounded-2xl bg-primary-600 text-white font-semibold shadow-lg hover:bg-primary-700 focus:outline-none focus:ring-[var(--ring)] register">Register
+              Now</a>
+            <a href="#overview"
+              class="px-6 py-3 rounded-2xl bg-white text-gray-800 font-semibold shadow hover:bg-gray-50">Why Attend?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Overview ===== -->
+  <section id="overview" class="py-14 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div data-aos="fade-right">
+          <h2 class="text-3xl sm:text-4xl font-extrabold">What is <span class="text-primary-600">Sakura Quest</span>?
+          </h2>
+          <p class="mt-4 text-gray-600 leading-relaxed" style="font-family: emoji; font-size: 18px;">Sakura Quest is a
+            nationwide initiative celebrating Japanese education and culture across India. The Grand Finale brings
+            together universities, scholarship bodies, language schools and cultural performers—offering students and
+            parents a one-stop platform to plan their Japan journey.</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex gap-3"><i class="fa-solid fa-user-graduate text-primary-600 mt-1"></i><span><strong>Meet
+                  Japanese Universities</strong> and speak directly with their representatives.</span></li>
+            <li class="flex gap-3"><i class="fa-regular fa-lightbulb text-primary-600 mt-1"></i><span><strong>Career &
+                  Scholarship Guidance</strong> from experts who know the process end-to-end.</span></li>
+            <li class="flex gap-3"><i class="fa-solid fa-fan text-primary-600 mt-1"></i><span><strong>Immersive Cultural
+                  Performances</strong> including Ikebana, Origami, dance, food and more.</span></li>
+          </ul>
+        </div>
+        <div class="relative" data-aos="fade-left">
+          <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+            <img src="./Images/SakuraQuest.jpeg" alt="Sakura Quest 2025 Japanese Culture Education Fair Japan culture"
+              class="w-full h-full object-fit" />
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Registration ===== -->
+  <section id="register" class="py-16 sm:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center" data-aos="zoom-in">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">
+          Register Now to Attend <span class="text-primary-600">Sakura Quest 2025</span>!
+        </h2>
+        <p class="mt-3 text-gray-600">
+          Seats are limited. Complete the form to receive your entry QR code and event updates.
+        </p>
+      </div>
+
+      <div class="mt-12 grid lg:grid-cols-2 gap-8 items-stretch">
+        <!-- Event Details -->
+        <div
+          class="relative rounded-3xl p-8 flex flex-col justify-between text-center shadow-xl bg-gradient-to-br from-white via-gray-50 to-primary-50 border border-primary-100"
+          data-aos="fade-right">
+          <div>
+            <h3 class="font-bold text-2xl text-primary-700">Event Details</h3>
+            <p class="mt-2 text-gray-600 text-sm">
+              Explore the opportunities of studying in Japan through our upcoming event. Gain valuable insights into the
+              Japanese language, culture, and university application process. Don’t miss out on this chance to start
+              your journey toward Japan.
+            </p>
+
+            <ul class="mt-6 space-y-4 text-base text-gray-700 text-left max-w-sm mx-auto">
+              <li class="flex items-start gap-3">
+                <i class="fa-regular fa-calendar text-primary-600 mt-1"></i>
+                <span>
+                  <strong>Date:</strong> Sunday, 21 September 2025<br>
+                  <span class="text-sm text-gray-500">Full-day event (10 AM – 6 PM)</span>
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-primary-600 mt-1"></i>
+                <span>
+                  <strong>Venue:</strong> Pride Plaza Hotel, Aerocity, New Delhi<br>
+                  <a href="https://maps.google.com/?q=Pride+Plaza+Hotel+Aerocity" target="_blank"
+                    class="text-primary-600 text-sm underline">View on Google Maps</a>
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-ticket text-primary-600 mt-1"></i>
+                <span>
+                  <strong>Entry:</strong> Free (Registration Mandatory)<br>
+                  <span class="text-sm text-gray-500">Limited Seats Available</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Register Now button -->
+          <a href="https://forms.zohopublic.in/educationjapan98391/form/SakuraQuestDelhi/formperma/GhItMJL-BE2XdG8mnyai9Gq46zIU1g0vy3VhMoYNVEo"
+            target="_blank"
+            class="mt-8 inline-flex items-center justify-center gap-2 px-8 py-3 rounded-xl bg-primary-600 text-white font-semibold hover:bg-primary-700 transition mx-auto shadow-md hover:shadow-lg register">
+            <i class="fa-solid fa-pen-to-square"></i> Register Now
+          </a>
+        </div>
+
+
+        <!-- Event Guide with QR -->
+        <div
+          class="bg-gradient-to-br from-primary-600 to-primary-700 text-white rounded-3xl shadow p-6 flex flex-col items-center justify-between text-center"
+          data-aos="fade-left">
+          <div>
+            <h3 class="font-bold">Download Event Guide</h3>
+            <p class="text-sm mt-2 opacity-90">
+              Scan the QR code to submit the form and view the Event Guide with the schedule, exhibitors, and tips.
+            </p>
+          </div>
+
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdWlAjsq19mRor8yRgYC1uusgVJDzgyF5Yoz0PZtaZVZljQrg%2Fviewform"
+            alt="Sakura Quest 2025 Japanese Culture Education Fair QR code"
+            class="mt-6 w-40 h-40 rounded-xl bg-white p-2" />
+
+          <a href="https://educationjapan.co.in/" target="_blank"
+            class="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-primary-700 font-semibold">
+            Go to Event Guide <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===== Services (Education Japan) ===== -->
+  <section class="py-16 px-6 lg:px-20 bg-gradient-to-b from-black/10 via-black/15 to-white/50" id="services"
+    style="font-family: 'Noto Sans JP';">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Premium Services by <span class="text-primary-600">Education
+          Japan</span></h2>
+      <p class="text-gray-600 text-lg">End-to-end mentorship to kickstart your study journey in Japan.</p>
+    </div>
+
+    <!-- Exclusive Premium Service Container -->
+    <div class="bg-gradient-to-r from-orange-300 to-blue-300 text-white shadow-2xl rounded-3xl p-10 mb-10">
+      <h3 class="text-3xl font-bold mb-3 text-center text-primary-600">Exclusive Counselling Session</h3>
+      <p class="text-lg mb-3 text-center" style="color: rgb(55, 53, 53);">(Timings -9am to 10am)</p>
+      <p class="text-lg mb-3 text-center" style="color: rgb(55, 53, 53);">Get one-on-one premium guidance with our
+        senior experts for your Japan study plan.</p>
+      <div class="text-2xl font-extrabold text-center mb-10 text-primary-600">₹4999 <span
+          class="text-base font-medium">+ GST</span></div>
+
+      <!-- Inner Grid with 4 Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white/40 backdrop-blur-lg shadow-xl rounded-2xl p-6 text-gray-800 
+                  hover:scale-105 transform transition duration-100" data-aos="fade-up" data-aos-delay="0"
+          data-aos-duration="800">
+          <h3 class="text-lg font-semibold mb-3 gap-2 flex items-center text-primary-500"
+            style="font-family: 'bootstrap-icons';">
+            <i class="bi bi-person-badge-fill text-black"> </i>
+            Exclusive 15-minute session with the University
+          </h3>
+          <p class="text-sm leading-relaxed">Get direct interaction and insights.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white/40 backdrop-blur-lg shadow-xl rounded-2xl p-6 text-gray-800 
+                  hover:scale-105 transform transition duration-100" data-aos="fade-up" data-aos-delay="100"
+          data-aos-duration="800">
+          <h3 class="text-lg font-semibold  mb-3 gap-2 flex items-center text-primary-500"
+            style="font-family: 'bootstrap-icons';">
+            <i class="bi bi-file-earmark-text-fill text-black"></i> Personal Counselling Session with Senior Counsellors
+          </h3>
+          <p class="text-sm leading-relaxed">Tailored guidance for your study abroad journey.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white/40 backdrop-blur-lg shadow-xl rounded-2xl p-6 text-gray-800 
+                  hover:scale-105 transform transition duration-100" data-aos="fade-up" data-aos-delay="200"
+          data-aos-duration="800">
+          <h3 class="text-lg font-semibold  mb-3 gap-2 flex items-center text-primary-500"
+            style="font-family: 'bootstrap-icons';">
+            <i class="bi bi-people-fill text-black"></i> Detailed Assessment Report
+          </h3>
+          <p class="text-sm leading-relaxed"> Understand your strengths, eligibility, and best-fit options.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white/40 backdrop-blur-lg shadow-xl rounded-2xl p-6 text-gray-800 
+                  hover:scale-105 transform transition duration-100" data-aos="fade-up" data-aos-delay="300"
+          data-aos-duration="800">
+          <h3 class="text-lg font-semibold mb-3  gap-2 flex items-center text-primary-500"
+            style="font-family: 'bootstrap-icons';">
+            <i class="bi bi-easel-fill text-black"></i> Meet Deepti Ma’am & Education Japan Team
+          </h3>
+          <p class="text-sm leading-relaxed">Get expert advice and connect with the core team.</p>
+        </div>
+      </div>
+
+      <!-- Book Now Button -->
+      <div class="text-center mt-6">
+        <button id="bookNowBtn"
+          class="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-xl bg-primary-600 text-white font-semibold">
+          <i class="fa-solid fa-clock"></i> Book Now
+        </button>
+      </div>
+
+      <!-- QR + Form Section (hidden by default) -->
+      <div id="qrSection" class="mt-6 hidden">
+
+        <p class="text-gray-800 font-medium mb-6 text-center">Scan this QR or use UPI link to pay</p>
+
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-8 items-start">
+
+          <!-- LEFT: QR + Payment Info -->
+          <div class="w-full md:w-1/2 text-center">
+            <img src="./Images/QR-scanner.jpg" alt="Sakura Quest 2025 Japanese Culture Education Fair UPI QR Code"
+              class="mx-auto rounded-lg shadow-lg border w-60" />
+
+            <a href="upi://pay?pa=9654300658@pthdfc&pn=Deepti%20Singh&am=5899&cu=INR&tn=Education%20Japan%20Counselling%20Fee%20(4999%20GST%2018%)"
+              class="mt-4 inline-flex items-center justify-center gap-2 px-8 py-3 rounded-xl bg-green-600 text-white font-semibold">
+              <i class="fa-solid fa-indian-rupee-sign"></i> Pay ₹5899 via UPI
+            </a>
+
+            <p class="text-sm text-gray-700 mt-2">
+              ₹4999 + 18% GST (₹900) = <span class="font-bold">₹5899</span>
+            </p>
+
+            <p class="text-red-600 font-semibold mt-2 text-sm">
+              ⚠️ If amount shows ₹0, please enter ₹5899 manually.
+            </p>
+          </div>
+
+          <!-- RIGHT: Form Section -->
+          <div class="w-full md:w-1/2">
+            <form id="paymentForm" class="space-y-4 text-left">
+
+              <label class="block text-sm font-medium">Name</label>
+              <input type="text" name="name" id="name" required
+                class="border px-3 py-2 w-full rounded text-black placeholder-gray-500" placeholder="Enter your name">
+
+              <label class="block text-sm font-medium">Email</label>
+              <input type="email" name="email" id="email" required
+                class="border px-3 py-2 w-full rounded text-black placeholder-gray-500" placeholder="Enter your email">
+
+              <label class="block text-sm font-medium">Mobile</label>
+              <input type="tel" name="mobile" id="mobile" required
+                class="border px-3 py-2 w-full rounded text-black placeholder-gray-500"
+                placeholder="Enter your mobile number">
+
+              <p class="text-gray-600 text-sm">
+                ⚠️ After payment, please attach your screenshot manually in WhatsApp.
+              </p>
+
+              <button type="submit" class="bg-primary-600 text-white px-6 py-2 rounded-lg w-full">
+                Submit Payment Details via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.getElementById("bookNowBtn").onclick = function () {
+          // Ab har device par QR + Form show hoga
+          document.getElementById("qrSection").classList.remove("hidden");
+        };
+
+        // Form submit → WhatsApp redirect
+        document.getElementById("paymentForm").addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          let name = document.getElementById("name").value;
+          let email = document.getElementById("email").value;
+          let mobile = document.getElementById("mobile").value;
+
+          let msg = `Payment Confirmation:%0AName: ${name}%0AEmail: ${email}%0AMobile: ${mobile}%0A⚠️ Please attach payment screenshot.`;
+
+          // Replace with your WhatsApp number (country code ke sath)
+          let whatsappURL = "https://wa.me/917078623270?text=" + msg;
+
+          window.open(whatsappURL, "_blank");
+
+          // 🔥 Yeh line add ki gayi hai to clear inputs
+          document.getElementById("paymentForm").reset();
+        });
+      </script>
+
+
+    </div>
+  </section>
+
+
+  <!-- ===== Vision & Mission ===== -->
+  <section id="vision-mission" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Heading -->
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+          <span class="text-primary-600">Vision & Mission</span> of Education Japan
+        </h2>
+
+      </div>
+
+      <!-- Content Grid -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <!-- Director Info -->
+        <div class="profile-img-container text-center md:text-left" data-aos="fade-right">
+          <img src="./Images/Director of Education Japan.png"
+            alt="Sakura Quest 2025 Japanese Culture Education Fair Director Deepti Singh"
+            class="w-48 h-48 mx-auto md:mx-0 rounded-full object-contain shadow-lg border-4 border-primary-600">
+          <h3 class="mt-6 text-xl font-semibold text-gray-900">Deepti Singh</h3>
+          <p class="text-primary-600 font-medium">Director of Education Japan</p>
+
+        </div>
+
+        <!-- Vision & Mission Cards -->
+        <div class="space-y-6" data-aos="fade-left">
+          <div class="p-6 rounded-2xl shadow-md bg-gradient-to-r from-primary-50 to-white border border-primary-100">
+            <h4 class="text-xl font-bold text-primary-700 mb-2">Vision</h4>
+            <p class="text-gray-700">
+              To build a bridge between India and Japan by opening doors to world-class education
+              and cultural exchange, nurturing globally aware and future-ready leaders.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl shadow-md bg-gradient-to-r from-primary-50 to-white border border-primary-100">
+            <h4 class="text-xl font-bold text-primary-700 mb-2">Mission</h4>
+            <p class="text-gray-700">
+              To guide students with personalized mentorship—helping them choose the right university,
+              prepare for admissions, and gain the knowledge and confidence to achieve their dreams in Japan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===== Participating Universities ===== -->
+  <section id="Participating_universities" class="py-16 sm:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Heading -->
+      <div class="text-center mb-8" data-aos="fade-right">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">
+          Participating <span class="text-primary-600">Universities</span>
+        </h2>
+      </div>
+
+      <!-- Logos / Swiper -->
+      <div class="swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide flex items-center justify-center">
+            <img class="h-20 sm:h-25 object-contain" src="./Images/NUCB.jpeg"
+              alt="Sakura Quest 2025 Japanese Culture Education Fair NUCB" />
+          </a>
+          <a class="swiper-slide flex items-center justify-center">
+            <img class="h-20 sm:h-25  object-contain" src="./Images/KUAS.jpeg"
+              alt="Sakura Quest 2025 Japanese Culture Education Fair KUAS" />
+          </a>
+          <a class="swiper-slide flex items-center justify-center">
+            <img class="h-20 sm:h-25  object-contain" src="./Images/APU.jpeg"
+              alt="Sakura Quest 2025 Japanese Culture Education Fair APU" />
+          </a>
+          <a class="swiper-slide flex items-center justify-center">
+            <img class="h-20 sm:h-25  object-contain" src="./Images/ICLA.jpeg"
+              alt="Sakura Quest 2025 Japanese Culture Education Fair ICLA" />
+          </a>
+          <a class="swiper-slide flex items-center justify-center">
+            <img class="h-20 sm:h-25  object-contain" src="./Images/TEMPLE.jpeg"
+              alt="Sakura Quest 2025 Japanese Culture Education Fair TEMPLE" />
+          </a>
+        </div>
+        <div class="swiper-pagination" style="position: unset;"></div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- ===== Participating Schools ===== -->
+  <section id="Participating_schools" class="py-16 sm:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Heading -->
+      <div class="text-center mb-8" data-aos="fade-right">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">
+          Participating <span class="text-primary-600">Schools</span>
+        </h2>
+      </div>
+
+      <!-- Logos / Swiper -->
+      <div class="swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide flex items-center justify-center">
+            <img class="h-20 sm:h-25  object-contain" src="./Images/WhatsApp Image 2025-08-30 at 11.38.23 PM.jpeg"
+              alt="" />
+          </a>
+          <a class="swiper-slide flex items-center justify-center">
+            <img class="h-20 sm:h-25 object-contain" src="./Images/WhatsApp Image 2025-08-30 at 5.05.58 PM.jpeg"
+              alt="" />
+          </a>
+          <a class="swiper-slide flex items-center justify-center">
+            <img class="h-20 sm:h-25  object-contain" src="./Images/WhatsApp Image 2025-08-30 at 5.06.36 PM.jpeg"
+              alt="" />
+          </a>
+          <a class="swiper-slide flex items-center justify-center">
+            <img class="h-20 sm:h-25 object-contain" src="./Images/WhatsApp Image 2025-08-30 at 5.07.54 PM.jpeg"
+              alt="" />
+          </a>
+        </div>
+        <div class="swiper-pagination" style="position: unset;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Supporters ===== -->
+  <section id="sponsors" class="py-4 sm:py-5 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Heading -->
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-orange-500">Supported By</h2>
+        <p class="mt-2 text-lg text-blue-900">Special thanks to our Supporters.</p>
+      </div>
+
+      <!-- Supporter Logos -->
+      <div class="flex flex-wrap justify-center items-center gap-26">
+        <!-- JASSO -->
+        <div class="flex items-center justify-center">
+          <img src="./Images/JASSO.JPG" class="h-36 sm:h-40 lg:h-44 object-contain"
+            alt="Sakura Quest 2025 Japanese Culture Education Fair JASSO" />
+        </div>
+
+        <!-- Japan Month -->
+        <div class="flex items-center justify-center">
+          <img src="./Images/Japan Month.png" class="h-36 sm:h-40 lg:h-48 object-contain"
+            alt="Sakura Quest 2025 Japanese Culture Education Fair Japan Month" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Sponsors Section ===== -->
+  <section id="sponsors" class="py-4 sm:py-5 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Heading -->
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-orange-500">Sponser By</h2>
+        <p class="mt-2 text-lg text-blue-900">Special thanks to our Sponser.</p>
+      </div>
+
+      <!-- Sponsor Logos -->
+      <div class="flex flex-wrap justify-center items-center gap-26">
+        <img src="./Images/pilotpen.jpg" class="h-24 sm:h-28 lg:h-32 object-contain"
+          alt="Sakura Quest 2025 Japanese Culture Education Fair Pilot" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Location ===== -->
+  <section id="location" class="py-16 sm:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-8 items-start">
+        <div data-aos="fade-right">
+          <h2 class="text-3xl sm:text-4xl font-extrabold">Getting to the <span class="text-primary-600">Venue</span>
+          </h2>
+          <p class="mt-3 text-gray-600">Pride Plaza Hotel, Aerocity, New Delhi. The venue is well-connected via Delhi
+            Metro (Airport Express Line – Aerocity Station) and IGI Airport. Parking is available on-site.</p>
+          <ul class="mt-6 space-y-2 text-sm text-gray-700">
+            <li class="flex gap-2"><i class="fa-solid fa-train-subway text-primary-600 mt-1"></i> <span>Closest Metro:
+                Aerocity (Airport Express Line)</span></li>
+            <li class="flex gap-2"><i class="fa-solid fa-plane-departure text-primary-600 mt-1"></i> <span>10 min from
+                IGI Airport T3</span></li>
+            <li class="flex gap-2"><i class="fa-solid fa-hotel text-primary-600 mt-1"></i> <span>Plenty of hotels &
+                eateries in Aerocity</span></li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-3xl shadow overflow-hidden ring-1 ring-gray-100" data-aos="fade-left">
+          <iframe title="Venue Map" class="w-full h-[360px] sm:h-[420px]"
+            src="https://www.google.com/maps?q=Pride+Plaza+Hotel,+Aerocity,+New+Delhi&output=embed"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Cultural Activities / Gallery ===== -->
+  <section id="gallery" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl font-extrabold" style="color: orange;">Cultural Activities Showcase</h2>
+        <p class="mt-2 text-gray-600" style="color: rgb(17, 17, 172);"> Origami • calligraphy • manga • anime art corner
+          • anime quiz battle • kingyo sukhi(goldfish spoofing)</p>
+      </div>
+
+      <div class="mt-8 swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="aspect-[16/9] rounded-3xl overflow-hidden shadow">
+              <img src="./Images/Origami.jpg" alt="Sakura Quest 2025 Japanese Culture Education Fair Origami"
+                class="w-full h-full object-fit" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="aspect-[16/9] rounded-3xl overflow-hidden shadow">
+              <img src="./Images/dance.jpg" alt="Sakura Quest 2025 Japanese Culture Education Fair Origami"
+                class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="aspect-[16/9] rounded-3xl overflow-hidden shadow">
+              <img src="./Images/Calligraphy.jpg" alt="Sakura Quest 2025 Japanese Culture Education Fair Calligraphy"
+                class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="aspect-[16/9] rounded-3xl overflow-hidden shadow">
+              <img src="./Images/anime_art.jpeg"
+                alt="Sakura Quest 2025 Japanese Culture Education Fair Anime Art Corner"
+                class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="aspect-[16/9] rounded-3xl overflow-hidden shadow">
+              <img src="./Images/quiz_battle.jpeg"
+                alt="Sakura Quest 2025 Japanese Culture Education Fair Anime Quiz Battle"
+                class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination" style="position: unset;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div style="align-content: center;">
+          <h3 class="text-white font-bold text-lg"><a href="https://sakuraquest.netlify.app/">Sakura Quest</a> 2025</h3>
+          <p class="mt-2 text-sm opacity-80">Organised by Education Japan</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold">Contact</h4>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li class="flex gap-2"><i class="bi bi-phone-fill mt-0.5"></i> <a
+                class="hover:text-white">+91-8920702744</a> / <a class="hover:text-white">8851958613</a></li>
+            <li class="flex gap-2"><i class="bi bi-envelope-at-fill mt-0.5"></i> <a
+                href="mailto:info@educationjapan.co.in" class="hover:text-white">info@educationjapan.co.in</a></li>
+            <li class="flex gap-2"><i class="fbi bi-browser-chrome mt-0.5"></i> <a href="https://educationjapan.co.in"
+                target="_blank" class="hover:text-white">educationjapan.co.in</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold">Follow</h4>
+          <div class="mt-3 flex gap-3 text-lg">
+            <a aria-label="Instagram" href="https://www.instagram.com/educationjapanofficial/" target="_blank"
+              class="hover:text-white"><i class="bi bi-instagram"></i></a>
+            <a aria-label="YouTube" href="https://www.youtube.com/@Education_Japan/featured" target="_blank"
+              class="hover:text-white"><i class="bi bi-youtube"></i></a>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/company/education-japan/" target="_blank"
+              class="hover:text-white"><i class="bi bi-linkedin"></i></a>
+            <a aria-label="Facebook" href="https://www.facebook.com/photo/?fbid=876668471144811&set=a.872748094870182"
+              target="_blank" class="hover:text-white"><i class="bi bi-facebook"></i></a>
+          </div>
+          <p class="mt-4 text-xs opacity-70">© 2025 Education Japan. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: AOS + Swiper init -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
+      new Swiper('.swiper', {
+        slidesPerView: 1.15,
+        spaceBetween: 16,
+        centeredSlides: false,
+        loop: false,
+        autoplay: { delay: 500, disableOnInteraction: false },
+        pagination: { el: '.swiper-pagination', clickable: true },
+        breakpoints: {
+          640: { slidesPerView: 2.2, spaceBetween: 20 },
+          1024: { slidesPerView: 3.2, spaceBetween: 24 }
+        }
+      });
+    });
+
+    // Right-click
+    //   document.addEventListener('contextmenu', e => e.preventDefault());
+
+    //   // Block common copy/inspect keys
+    //   document.addEventListener('keydown', e => {
+    //     const k = e.key.toLowerCase();
+    //     const combo = (e.ctrlKey || e.metaKey);
+
+    //     if (k === 'f12') e.preventDefault();
+    //     if (e.ctrlKey && e.shiftKey && ['i','j','c'].includes(k)) e.preventDefault(); // DevTools combos
+    //     if (combo && ['u','s','p','c','x','a'].includes(k)) e.preventDefault(); // View-src, save, print, copy, cut, select all
+    //   });
+  </script>
+
+  <!-- ===== Countdown script (place before closing body) ===== -->
+  <script>
+    (function () {
+      // Change this if the event start time differs.
+      // Format: YYYY-MM-DDTHH:MM:SS+05:30  (IST offset included)
+      const eventDate = new Date('2025-09-21T09:00:00+05:30');
+
+      const daysEl = document.getElementById('cd-days');
+      const hoursEl = document.getElementById('cd-hours');
+      const minsEl = document.getElementById('cd-mins');
+      const secsEl = document.getElementById('cd-secs');
+      const liveEl = document.getElementById('cd-live');
+
+      function pad(n) { return n.toString().padStart(2, '0'); }
+
+      function update() {
+        const now = new Date();
+        let diff = eventDate - now;
+
+        if (diff <= 0) {
+          // event started
+          daysEl.textContent = '0';
+          hoursEl.textContent = '00';
+          minsEl.textContent = '00';
+          secsEl.textContent = '00';
+          liveEl.textContent = 'Event started';
+          clearInterval(timer);
+          return;
+        }
+
+        const seconds = Math.floor(diff / 1000) % 60;
+        const minutes = Math.floor(diff / (1000 * 60)) % 60;
+        const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+        daysEl.textContent = days;
+        hoursEl.textContent = pad(hours);
+        minsEl.textContent = pad(minutes);
+        secsEl.textContent = pad(seconds);
+
+        // update screen-reader text every second
+        liveEl.textContent = `${days} days, ${pad(hours)} hours, ${pad(minutes)} minutes, ${pad(seconds)} seconds remaining until the event.`;
+      }
+
+      update(); // initial
+      const timer = setInterval(update, 1000);
+    })();
+  </script>
+
+  <!-- OPTIONAL: small custom CSS to make digits feel 'card-like' -->
+  <style>
+    /* subtle rounded background for digits when viewed on wider screens */
+    .count-digit {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(250, 250, 250, 0.7));
+      padding: 0.08rem 0.45rem;
+      border-radius: 0.35rem;
+      min-width: 2.3ch;
+      display: inline-block;
+    }
+
+    /* utility: visually hidden for ARIA live */
+    .sr-only {
+      position: absolute !important;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+    }
+  </style>
+  <style>
+    /* Profile Image Container Fix */
+    .profile-img-container {
+      margin-top: -20px;
+      /* image ko upar karega */
+    }
+
+    /* Agar aur precise control chahiye */
+    .profile-img-container img {
+      transform: translateY(-10px);
+      /* thoda aur upar */
+    }
+  </style>
+
+</body>
+
+</html>
